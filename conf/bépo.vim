@@ -82,4 +82,4 @@ noremap w<CR> :vsplit<CR>
 
 " Leader keys
 let mapleader = ','
-let maplocalleader = 'l'
+let maplocalleader = '.'
