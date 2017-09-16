@@ -4,16 +4,27 @@
 
 ### Clone repository
 
+#### Vim
+
 ```sh
 $ git clone https://github.com/oszika/purevim.git ~/.vim
 ```
 
-### Install vim-plug:
+#### Neovim
+
+```sh
+$ git clone https://github.com/oszika/purevim.git ~/.config/nvim
+```
+
+### Install vim-plug
+
 ```sh
 $ ~/.vim/plugInstall.sh
 ```
 
-Then, execute vim command:
-```vim
+### Install plugins
+
+```
+$ vim
 :PlugInstall
 ```
