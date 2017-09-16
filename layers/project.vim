@@ -1,8 +1,8 @@
 call add(g:groups, "project")
 
-function! conf#project#plugins() abort
+function! layers#project#plugins() abort
 	return ['airblade/vim-rooter']
 endfunction
 
-function! conf#project#configure() abort
+function! layers#project#configure() abort
 endfunction

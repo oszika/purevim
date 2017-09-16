@@ -1,10 +1,10 @@
 call add(g:groups, "git")
 
-function! conf#git#plugins() abort
+function! layers#git#plugins() abort
 	return ['airblade/vim-gitgutter', 'tpope/vim-fugitive']
 endfunction
 
-function! conf#git#configure() abort
+function! layers#git#configure() abort
 	nnoremap <leader>hn :GitGutterNextHunk<CR>
 	nnoremap <leader>hp :GitGutterPrevHunk<CR>
 	nnoremap <leader>hv :GitGutterPreviewHunk<CR>

@@ -1,10 +1,10 @@
 call add(g:groups, "mappings")
 
-function! conf#mappings#plugins() abort
+function! layers#mappings#plugins() abort
 	return []
 endfunction
 
-function! conf#mappings#configure() abort
+function! layers#mappings#configure() abort
 	" Vim edition
 	nnoremap <leader>ve :e $MYVIMRC<cr>
 	nnoremap <leader>vs :source $MYVIMRC<cr>

@@ -1,10 +1,10 @@
 call add(g:groups, "theme")
 
-function! conf#theme#plugins() abort
+function! layers#theme#plugins() abort
 	return ['vim-airline/vim-airline', 'morhetz/gruvbox']
 endfunction
 
-function! conf#theme#configure() abort
+function! layers#theme#configure() abort
 	syntax enable
 	set t_Co=256
 
