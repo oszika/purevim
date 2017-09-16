@@ -5,6 +5,7 @@ function! layers#go#plugins() abort
 endfunction
 
 function! layers#go#configure() abort
-	nnoremap <localleader>d :GoDef <C-R><C-W><CR>
-	nnoremap <localleader>a :GoAlternate<CR>
+	nnoremap <localleader>d :GoDef <c-r><c-w><cr>
+	nnoremap <localleader>a :GoAlternate<cr>
+	nnoremap <localleader>b :GoBuild<cr>
 endfunction
