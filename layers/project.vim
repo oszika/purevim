@@ -5,4 +5,5 @@ function! layers#project#plugins() abort
 endfunction
 
 function! layers#project#configure() abort
+	nnoremap <leader>pf :Files<cr>
 endfunction

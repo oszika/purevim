@@ -1,7 +1,7 @@
 call add(g:groups, "mappings")
 
 function! layers#mappings#plugins() abort
-	return []
+	return ['junegunn/fzf', 'junegunn/fzf.vim']
 endfunction
 
 function! layers#mappings#configure() abort
@@ -11,4 +11,8 @@ function! layers#mappings#configure() abort
 
 	" Window navigation
 	nnoremap <silent> <tab> :wincmd w<cr>
+
+	" Fzf mapping
+	nnoremap <leader>w :Windows<cr>
+	nnoremap <leader>b :Buffers<cr>
 endfunction
