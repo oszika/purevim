@@ -5,6 +5,10 @@ function! layers#theme#plugins() abort
 endfunction
 
 function! layers#theme#configure() abort
+	set mouse=a
+
+	set nu
+
 	syntax enable
 	set t_Co=256
 
