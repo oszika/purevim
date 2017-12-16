@@ -17,6 +17,7 @@ function! layers#go#configure() abort
 	nnoremap <localleader>ga :GoAlternate<cr>
 	nnoremap <localleader>gb :GoBuild<cr>
 	nnoremap <localleader>gi :GoInfo<cr>
+	nnoremap <localleader>gt :GoTest<cr>
 
 	" delve
 	nnoremap <localleader>db :DlvBuild<cr>
@@ -27,5 +28,11 @@ function! layers#go#configure() abort
 	inoremap <tab> <c-x><c-o>
 	inoremap <c-t> <c-n>
 	inoremap <c-s> <c-p>
+
+	" lint
+	set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+
+	" auto goimports
+	let g:go_fmt_command = "goimports"
 
 endfunction
