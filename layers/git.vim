@@ -13,4 +13,6 @@ function! layers#git#configure() abort
 
 	nnoremap <leader>gs :Gstatus<CR>
 	nnoremap <leader>gd :Gdiff<CR>
+
+	command! -bang -nargs=* GGrep call fzf#vim#grep('git grep --line-number '.shellescape(<q-args>), 0, <bang>0)
 endfunction
