@@ -15,4 +15,5 @@ function! layers#mappings#configure() abort
 	" Fzf mapping
 	nnoremap <leader>w :Windows<cr>
 	nnoremap <leader>b :Buffers<cr>
+	nnoremap <leader>f :Files<cr>
 endfunction
