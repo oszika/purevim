@@ -16,4 +16,6 @@ function! layers#mappings#configure() abort
 	nnoremap <leader>w :Windows<cr>
 	nnoremap <leader>b :Buffers<cr>
 	nnoremap <leader>f :Files<cr>
+
+	vnoremap <LeftRelease> "*ygv
 endfunction
