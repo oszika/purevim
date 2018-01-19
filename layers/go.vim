@@ -35,4 +35,6 @@ function! layers#go#configure() abort
 	" auto goimports
 	let g:go_fmt_command = "goimports"
 
+	nnoremap <C-s> :call go#def#StackPop()<cr>
+
 endfunction
