@@ -1,7 +1,7 @@
 call add(g:groups, "mappings")
 
 function! layers#mappings#plugins() abort
-	return ['junegunn/fzf', 'junegunn/fzf.vim']
+	return ['junegunn/fzf', 'junegunn/fzf.vim', 'easymotion/vim-easymotion']
 endfunction
 
 function! layers#mappings#configure() abort
@@ -18,5 +18,8 @@ function! layers#mappings#configure() abort
 	nnoremap <leader>g :GFiles<cr>
 	nnoremap <leader>f :Files<cr>
 
-	vnoremap <LeftRelease> "*ygv
+	"vnoremap <LeftRelease> "*ygv
+
+	" EasyMotion
+	map <leader>j <Plug>(easymotion-bd-f)
 endfunction
