@@ -17,7 +17,7 @@ function! layers#go#configure() abort
 	nnoremap <localleader>ga :GoAlternate<cr>
 	nnoremap <localleader>gb :GoBuild<cr>
 	nnoremap <localleader>gi :GoInfo<cr>
-	nnoremap <localleader>gt :GoTest<cr>
+	nnoremap <localleader>gt :GoTest!<cr>
 
 	" delve
 	nnoremap <localleader>db :DlvBuild<cr>
@@ -41,6 +41,7 @@ function! layers#go#configure() abort
 	let g:go_highlight_operators = 1
 	let g:go_highlight_extra_types = 1
 	let g:go_auto_sameids = 0
+	"let g:go_jump_to_error = 0
 
 	nnoremap <C-s> :call go#def#StackPop()<cr>
 
